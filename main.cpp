@@ -1,7 +1,7 @@
 #include <iostream>
-
+//Erick Alejandro Marroquin Gonzalez 0909-23-6928
 using namespace std;
-
+//Tabla de multiplicar 4 y 6 - Ejercicios 1
 int main() {
     cout << "Tabla de multiplicar del 4:" << endl;
     for (int i = 1; i <= 10; i++) {
@@ -63,7 +63,7 @@ int main() {
             cout << numPrimo << " no es un numero primo." << endl;
         }
 
-    // Verificar si un número es par
+    // Verificar si un número es par - Ejercicios 5
     int numPar;
     cout << "\nIngrese un numero para verificar si es par: ";
     cin >> numPar;
@@ -74,9 +74,19 @@ int main() {
         cout << numPar << " no es un numero par." << endl;
     }
 
+    // Tabla de multiplicar de un número cualquiera - Ejercicios 6
+    int numTabla;
+    cout << "\nIngrese un numero para mostrar su tabla de multiplicar: ";
+    cin >> numTabla;
+
+    cout << "Tabla de multiplicar del " << numTabla << ":" << endl;
+    for (int i = 1; i <= 10; i++) {
+        cout << numTabla << " x " << i << " = " << (numTabla * i) << endl;
+    }
+
     return 0;
 }
-
+//Erick Alejandro Marroquin Gonzalez 0909-23-6928
 // TIP See CLion help at <a
 // href="https://www.jetbrains.com/help/clion/">jetbrains.com/help/clion/</a>.
 //  Also, you can try interactive lessons for CLion by selecting
