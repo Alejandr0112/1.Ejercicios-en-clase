@@ -63,8 +63,20 @@ int main() {
             cout << numPrimo << " no es un numero primo." << endl;
         }
 
-        return 0;
+    // Verificar si un número es par
+    int numPar;
+    cout << "\nIngrese un numero para verificar si es par: ";
+    cin >> numPar;
+
+    if (numPar % 2 == 0) {
+        cout << numPar << " es un numero par." << endl;
+    } else {
+        cout << numPar << " no es un numero par." << endl;
     }
+
+    return 0;
+}
+
 // TIP See CLion help at <a
 // href="https://www.jetbrains.com/help/clion/">jetbrains.com/help/clion/</a>.
 //  Also, you can try interactive lessons for CLion by selecting
