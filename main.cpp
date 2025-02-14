@@ -13,8 +13,21 @@ int main() {
         cout << "6 x " << i << " = " << (6 * i) << endl;
     }
 
+    // Cálculo del factorial - Ejercicio 2
+    int num;
+    cout << "\nIngrese un numero para calcular su factorial: ";
+    cin >> num;
+
+    long long factorial = 1;
+    for (int i = 1; i <= num; i++) {
+        factorial *= i;
+    }
+
+    cout << "El factorial de " << num << " es " << factorial << endl;
+
     return 0;
 }
+
 
 // TIP See CLion help at <a
 // href="https://www.jetbrains.com/help/clion/">jetbrains.com/help/clion/</a>.
