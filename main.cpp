@@ -25,9 +25,23 @@ int main() {
 
     cout << "El factorial de " << num << " es " << factorial << endl;
 
+    // Serie de Fibonacci - Ejercicios 3
+    int n;
+    cout << "\nIngrese la cantidad de terminos de la serie de Fibonacci: ";
+    cin >> n;
+
+    long long a = 0, b = 1, temp;
+    cout << "Serie de Fibonacci: " << a << " " << b << " ";
+    for (int i = 2; i < n; i++) {
+        temp = a + b;
+        cout << temp << " ";
+        a = b;
+        b = temp;
+    }
+    cout << endl;
+
     return 0;
 }
-
 
 // TIP See CLion help at <a
 // href="https://www.jetbrains.com/help/clion/">jetbrains.com/help/clion/</a>.
