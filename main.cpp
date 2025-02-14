@@ -40,9 +40,31 @@ int main() {
     }
     cout << endl;
 
-    return 0;
-}
+        // Verificar si un número es primo o no - Ejercicios 4
+        int numPrimo;
+        cout << "\nIngrese un numero para verificar si es primo: ";
+        cin >> numPrimo;
 
+        bool esPrimo = true;
+        if (numPrimo <= 1) {
+            esPrimo = false;
+        } else {
+            for (int i = 2; i * i <= numPrimo; i++) {
+                if (numPrimo % i == 0) {
+                    esPrimo = false;
+                    break;
+                }
+            }
+        }
+
+        if (esPrimo) {
+            cout << numPrimo << " es un numero primo." << endl;
+        } else {
+            cout << numPrimo << " no es un numero primo." << endl;
+        }
+
+        return 0;
+    }
 // TIP See CLion help at <a
 // href="https://www.jetbrains.com/help/clion/">jetbrains.com/help/clion/</a>.
 //  Also, you can try interactive lessons for CLion by selecting
